@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- corpo do formulário -->
+    <section class="form">
+        <div class="bloco-nome-hotel">
+            <h1>Cadastro de novos hotéis</h1>
+            <form name="cadastro" id="dados" action="" method="post">
+                <!-- nome do hotel -->
+                <div class="nome-hotel">
+                    <label for="nome" class="nome-hotel-label">Nome do hotel:</label>
+                    <input type="text" id="nome" placeholder="ex: Hotel Paraíso" class="nome-hotel-input">
+                </div>
+        </div>   
+        <!-- localização-->
+        <h2>Localização</h2>
+        <div class="bloco-localizacao">
+          <!-- rua-->
+            <div class="bloco-separado">
+              <label for="rua">Rua</label>
+              <input type="text" id="rua" required placeholder="ex: Av. Paulista">
+            </div>
+                
+          <!-- Bairro-->
+            <div class="bloco-separado">
+              <label for="bairro">bairro</label>
+               <input type="text" id="bairro" required placeholder="ex: Cerqueira Cesar">
+            </div>
+           <!-- Cidade-->
+             <div class="bloco-separado">
+               <label for="cidade">Cidade</label>
+               <input type="text" id="cidade" required placeholder="ex: São Paulo">
+            </div>
+            <!-- Estado-->
+              <div class="bloco-separado">
+                <label for="Estado">Estado</label>
+                <input type="text" id="Estado" required placeholder="ex: São Paulo ">
+              </div>
+            <!-- Pais-->
+            <div class="bloco-separado">
+                 <label for="pais">Pais</label>
+                <input type="text" id="pais" required placeholder="ex: Brasil">
+            </div>
+        </div>
+    <!-- Comodidades -->
+    <h2>Comodidades</h2>
+    <section class="checkbox">
+        <div class="checkbox-text">
+            <input type="checkbox" name="" id="checkbox">
+            Piscina
+        </div class="checkbox-text">
+        <div>
+            <input type="checkbox" name="" id="checkbox">
+            Churrasqueira
+        </div>
+        <div class="checkbox-text">
+            <input type="checkbox" name="" id="checkbox">
+            Playground
+        </div>
+        <div class="checkbox-text">
+            <input type="checkbox" name="" id="checkbox">
+            Sala de jogos
+        </div>
+        <div class="checkbox-text">
+            <input type="checkbox" name="" id="checkbox">
+            Restaurante
+        </div>
+        <div class="checkbox-text">
+            <input type="checkbox" name="" id="checkbox">
+            Sauna
+        </div>
+    </section>
+        <!-- ingressos -->
+            <h2>Ingressos</h2>
+            <section class="bloco-ingressos">
+                <!------ ingresso ------>
+              <article class="bloco-ingresso">
+               <label for="name">Quantidade:</label>
+               <select name="quantidade" id="quantidade">
+                   <option value="0">Selecione uma opção</option>
+                   <option value="1">1</option>
+                   <option value="2">2</option>
+                   <option value="3">3</option>
+                   <option value="4">4</option>
+                   <option value="5">5</option>
+                   <option value="6">6</option>
+               </select>
+
+                  <!---- valor ------>
+               <article class="bloco-ingresso">
+               <label for="name">Preço:</label>
+                <select name="valor" id="valor">
+                    <option value="0">Defina um valor</option>
+                    <option value="150">R$ 150 (1 diária)</option>
+                    <option value="250">R$ 250 (2 diárias)</option>
+                    <option value="350">R$ 350 (3 diárias) </option>
+                    <option value="450">R$ 400 (4 diárias) </option>
+                    <option value="550">R$ 500 (5 diárias) </option>
+                    <option value="650">R$ 600 (6 diárias) </option>
+                    <option value="750">R$ 700 (7 diárias) </option>
+                </select>
+                </article>      
+            </section>
+            <!-- Caixa de comentários -->
+             <article class="caixa">
+                 <h3>Dúvidas?<h3>
+                 <p class="caixa-p">Faça um comentário abaixo!</p>
+                <textarea name="mensagem" id="mensagem" cols="25" rows="5"></textarea>
+            </article>
+            <!-- botão de enviar -->
+            <div class="botao-enviar">
+                <a href="#">Enviar</a>
+            </div>
+            </form>
+        </section>
+    </section>
+</body>
+
+</html>
